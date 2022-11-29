@@ -1,26 +1,79 @@
-= K-Libs Multi-Platform Library Repo Template
+= K-Heap
 :source-highlighter: highlightjs
 :gh-group: k-libs
-:gh-name: k-some-lib
+:gh-name: k-heap
 :lib-package: io.klibs
 :lib-group: io.k-libs
-:lib-name: some-lib
+:lib-name: heap
 :lib-version: 0.1.0
 :lib-feature: 0.1.0
 
-////
 image:https://img.shields.io/github/license/{gh-group}/{gh-name}[title="License"]
 image:https://img.shields.io/badge/docs-dokka-ff69b4[link="https://{gh-group}.github.io/{gh-name}/dokka/{lib-feature}/{lib-name}/{lib-package}/index.html"]
 image:https://img.shields.io/maven-central/v/{lib-group}/{lib-name}[link="https://search.maven.org/artifact/{lib-group}/{lib-name}"]
-////
 
-A template repository with the boilerplate taken care of.
+A pure Kotlin heap implementation that allows for custom type items.
 
-////
 == Import
 
 [source, kotlin, subs="attributes"]
 ----
   implementation("{lib-group}:{lib-name}:{lib-version}")
 ----
-////
+
+
+== Usage
+
+=== Basic
+
+.Min Heap
+[source, kotlin]
+----
+val heap = minHeapOf(1, 5, 2, 4, 3)
+
+require(heap.next() == 1)
+require(heap.next() == 2)
+require(heap.next() == 3)
+require(heap.next() == 4)
+require(heap.next() == 5)
+----
+
+
+.Max Heap
+[source, kotlin]
+----
+val heap = maxHeapOf(1, 5, 2, 4, 3)
+
+require(heap.next() == 5)
+require(heap.next() == 4)
+require(heap.next() == 3)
+require(heap.next() == 2)
+require(heap.next() == 1)
+----
+
+=== Custom Types
+
+[source, kotlin]
+----
+data class Dog(val name: String)
+
+val dogs = listOf(
+  Dog("Dexter"),
+  Dog("Luna"),
+  Dog("Daisy"),
+  Dog("Max"),
+)
+
+val heap = heapOf(dogs) { a, b -> a.name < b.name}
+----
+
+=== Full Control
+
+[source, kotlin]
+----
+val heap = Heap<Burger>(
+  initialCapacity = 32,
+  scaleFactory    = 2F,
+  maxSize         = 256,
+) { a, b -> a.price > b.price }
+----

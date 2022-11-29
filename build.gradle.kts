@@ -7,7 +7,7 @@ plugins {
 
 group = "io.k-libs"
 version = "0.1.0"
-description = "Some library description."
+description = "Pure Kotlin heap implementation."
 
 repositories {
   mavenCentral()
@@ -92,9 +92,9 @@ publishing {
       artifact(javadocJar)
 
       pom {
-        name.set("K-Sample")
+        name.set("K-Heap")
         description.set(project.description)
-        url.set("https://github.com/k-libs/k-lib-template")
+        url.set("https://github.com/k-libs/k-heap")
 
         licenses {
           license {
@@ -112,9 +112,9 @@ publishing {
         }
 
         scm {
-          connection.set("scm:git:git://github.com/k-libs/k-lib-template.git")
-          developerConnection.set("scm:git:ssh://github.com/k-libs/k-lib-template.git")
-          url.set("https://github.com/k-libs/k-lib-template")
+          connection.set("scm:git:git://github.com/k-libs/k-heap.git")
+          developerConnection.set("scm:git:ssh://github.com/k-libs/k-heap.git")
+          url.set("https://github.com/k-libs/k-heap")
         }
       }
     }

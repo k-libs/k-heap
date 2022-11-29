@@ -1,0 +1,28 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:io.klibs.collections////PointingToDeclaration/heap/io.klibs.collections/index.html
+$dokka.location:io.klibs.collections//heapOf/#kotlin.Array[TypeParam(bounds=[kotlin.Any?])]#io.klibs.collections.SortTest[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/heap/io.klibs.collections/heap-of.html
+$dokka.location:io.klibs.collections//heapOf/#kotlin.collections.Iterable[TypeParam(bounds=[kotlin.Any?])]#io.klibs.collections.SortTest[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/heap/io.klibs.collections/heap-of.html
+$dokka.location:io.klibs.collections//maxHeapOf/#kotlin.Array[TypeParam(bounds=[kotlin.Comparable[^]])]/PointingToDeclaration/heap/io.klibs.collections/max-heap-of.html
+$dokka.location:io.klibs.collections//maxHeapOf/#kotlin.collections.Iterable[TypeParam(bounds=[kotlin.Comparable[^]])]/PointingToDeclaration/heap/io.klibs.collections/max-heap-of.html
+$dokka.location:io.klibs.collections//minHeapOf/#kotlin.Array[TypeParam(bounds=[kotlin.Comparable[^]])]/PointingToDeclaration/heap/io.klibs.collections/min-heap-of.html
+$dokka.location:io.klibs.collections//minHeapOf/#kotlin.collections.Iterable[TypeParam(bounds=[kotlin.Comparable[^]])]/PointingToDeclaration/heap/io.klibs.collections/min-heap-of.html
+$dokka.location:io.klibs.collections/Heap///PointingToDeclaration/heap/io.klibs.collections/-heap/index.html
+$dokka.location:io.klibs.collections/Heap/Heap/#kotlin.Int#kotlin.Float#kotlin.Int#io.klibs.collections.SortTest[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/heap/io.klibs.collections/-heap/-heap.html
+$dokka.location:io.klibs.collections/Heap/capacity/#/PointingToDeclaration/heap/io.klibs.collections/-heap/capacity.html
+$dokka.location:io.klibs.collections/Heap/forEach/#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/heap/io.klibs.collections/-heap/for-each.html
+$dokka.location:io.klibs.collections/Heap/forEachIndexed/#kotlin.Function2[kotlin.Int,TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/heap/io.klibs.collections/-heap/for-each-indexed.html
+$dokka.location:io.klibs.collections/Heap/hasNext/#/PointingToDeclaration/heap/io.klibs.collections/-heap/has-next.html
+$dokka.location:io.klibs.collections/Heap/insert/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/heap/io.klibs.collections/-heap/insert.html
+$dokka.location:io.klibs.collections/Heap/isEmpty/#/PointingToDeclaration/heap/io.klibs.collections/-heap/is-empty.html
+$dokka.location:io.klibs.collections/Heap/isNotEmpty/#/PointingToDeclaration/heap/io.klibs.collections/-heap/is-not-empty.html
+$dokka.location:io.klibs.collections/Heap/iterator/#/PointingToDeclaration/heap/io.klibs.collections/-heap/iterator.html
+$dokka.location:io.klibs.collections/Heap/maxSize/#/PointingToDeclaration/heap/io.klibs.collections/-heap/max-size.html
+$dokka.location:io.klibs.collections/Heap/next/#/PointingToDeclaration/heap/io.klibs.collections/-heap/next.html
+$dokka.location:io.klibs.collections/Heap/peekNext/#/PointingToDeclaration/heap/io.klibs.collections/-heap/peek-next.html
+$dokka.location:io.klibs.collections/Heap/plusAssign/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/heap/io.klibs.collections/-heap/plus-assign.html
+$dokka.location:io.klibs.collections/Heap/size/#/PointingToDeclaration/heap/io.klibs.collections/-heap/size.html
+$dokka.location:io.klibs.collections/SortTest///PointingToDeclaration/heap/io.klibs.collections/-sort-test/index.html
+$dokka.location:io.klibs.collections/SortTest/test/#TypeParam(bounds=[kotlin.Any?])#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/heap/io.klibs.collections/-sort-test/test.html
+io.klibs.collections
+
