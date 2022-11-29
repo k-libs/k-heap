@@ -24,7 +24,7 @@ package io.klibs.collections
  * @since 0.1.0
  */
 fun <T> heapOf(vararg values: T, fn: SortTest<T>): Heap<T> =
-  Heap(initialSize = values.size, sortTest = fn)
+  Heap(initialCapacity = values.size, sortTest = fn)
     .apply { values.forEach { insert(it) } }
 
 /**
@@ -52,7 +52,7 @@ fun <T> heapOf(vararg values: T, fn: SortTest<T>): Heap<T> =
  */
 fun <T> heapOf(values: Iterable<T>, fn: SortTest<T>): Heap<T> =
   if (values is Collection)
-    Heap(initialSize = values.size, sortTest = fn)
+    Heap(initialCapacity = values.size, sortTest = fn)
       .apply { values.forEach { insert(it) } }
   else
     Heap(sortTest = fn).apply { values.forEach { insert(it) } }
@@ -77,7 +77,7 @@ fun <T> heapOf(values: Iterable<T>, fn: SortTest<T>): Heap<T> =
  * @since 0.1.0
  */
 fun <T : Comparable<T>> minHeapOf(vararg values: T): Heap<T> =
-  Heap<T>(initialSize = values.size) { a, b -> a < b }
+  Heap<T>(initialCapacity = values.size) { a, b -> a < b }
     .apply { values.forEach { insert(it) } }
 
 /**
@@ -102,7 +102,7 @@ fun <T : Comparable<T>> minHeapOf(vararg values: T): Heap<T> =
  */
 fun <T : Comparable<T>> minHeapOf(values: Iterable<T>): Heap<T> =
   if (values is Collection)
-    Heap<T>(initialSize = values.size) { a, b -> a < b }
+    Heap<T>(initialCapacity = values.size) { a, b -> a < b }
       .apply { values.forEach { insert(it) } }
   else
     Heap<T> { a, b -> a < b }
@@ -128,7 +128,7 @@ fun <T : Comparable<T>> minHeapOf(values: Iterable<T>): Heap<T> =
  * @since 0.1.0
  */
 fun <T : Comparable<T>> maxHeapOf(vararg values: T): Heap<T> =
-  Heap<T>(initialSize = values.size) { a, b -> a > b }
+  Heap<T>(initialCapacity = values.size) { a, b -> a > b }
     .apply { values.forEach { insert(it) } }
 
 /**
@@ -153,7 +153,7 @@ fun <T : Comparable<T>> maxHeapOf(vararg values: T): Heap<T> =
  */
 fun <T : Comparable<T>> maxHeapOf(values: Iterable<T>): Heap<T> =
   if (values is Collection)
-    Heap<T>(initialSize = values.size) { a, b -> a > b }
+    Heap<T>(initialCapacity = values.size) { a, b -> a > b }
       .apply { values.forEach { insert(it) } }
   else
     Heap<T> { a, b -> a > b }
