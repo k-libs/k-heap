@@ -2,7 +2,7 @@
 :source-highlighter: highlightjs
 :gh-group: k-libs
 :gh-name: k-heap
-:lib-package: io.klibs
+:lib-package: io.klibs.collections
 :lib-group: io.k-libs
 :lib-name: heap
 :lib-version: 0.1.0
